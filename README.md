@@ -97,6 +97,13 @@ git checkout -b report
 Отчёт оформлен в файле `README.md` с использованием Markdown. 
 Скриншоты помещены в папку `screenshots`.
 
+### 15. История операций
+
+```bash
+git log --pretty=format:"%h %ad %an %s" --date=short
+```
+![](screenshots/Screen-071.png)
+
 ---
 
 ## Лог команд
@@ -112,4 +119,6 @@ git add .
 git commit -m "comment"
 git reset --hard HEAD~1
 git checkout -b report
+git log --pretty=format:"%h %ad %an %s" --date=short
+git push
 ```
